@@ -15,3 +15,25 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(5000);
+
+
+
+// example
+
+/*
+const http = require('http')
+
+const server = http.createServer((req, res) => {
+  console.log('request event')
+  if (req.url === '/about') {
+    res.end('Just a little about me')
+  } else {
+    res.end("Hello world!")
+  }
+})
+
+server.listen(5000, () => {
+  console.log('Server listening to port : 5000....')
+})
+
+ */
